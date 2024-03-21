@@ -232,7 +232,7 @@ router.post("/sampath", (req, res) => {
                 }
                 pdf.create(data, options).toFile("sampath.pdf", function (err, data){
                     if(err) {
-                        res.send(err);
+                        res.send("error log - " + err);
                     } else {
                         console.log("sampath pdf made");
                         // res.send("file created");
