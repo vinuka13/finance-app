@@ -218,6 +218,7 @@ router.post("/sampath", (req, res) => {
         },
         (err, data) => {
             if(err) {
+                console.log("error in pdf generate - " + err);
                 res.send(err)
             } else {
                 let options = {
