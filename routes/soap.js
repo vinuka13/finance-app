@@ -205,6 +205,7 @@ router.post("/sampath", (req, res) => {
     const { contactname, type, amemdment, date, margin, amount, expire, tenderNo} = req.body;
     ejs.renderFile(
         path.join(__dirname, "../views", "report-template.ejs"),
+        console.log("ejs template accessed);
         {
             contactname : contactname,
             type : type,
